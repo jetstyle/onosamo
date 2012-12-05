@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+    <meta charset="utf-8">
+
+    <!-- CHECKLIST: Remove if activated in .htaccess -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <!-- CHECKLIST: Test on CMS
+         Must be filled on all pages -->
+     <title>ОНОСАМО!</title>
+
+    <!-- CHECKLIST: Test on CMS
+         SEO stuff, need to be on every indexing page -->
+    <meta name="keywords" content="{FIXME}">
+    <meta name="description" content="{FIXME}">
+
+    <meta name="viewport" content="width=device-width">
+
+    <!-- CHECKLIST: Test on CMS
+         Canonical url for a page to index in search engines, need to be on every indexing page -->
+    <link rel="canonical" href="{FIXME}">
+
+    <!-- CHECKLIST: Rename to *.min.css for production -->
+    <!--[if gt IE 8]><!--><link rel="stylesheet" href="publish/style.css"><!--<![endif]-->
+    <!--[if lt IE 9]><link rel="stylesheet" href="publish/style.ie.css"><![endif]-->
+
+</head>
+<body>
+
+    <!-- Site code goes here -->
+<div class="b-wrap">
+	<header class="b-header">
+    	<div class="b-header-title">
+            <div class="b-header-title__descr">Конкурс компании JetStyle</div>
+            <h1 class="b-header-title__name">ОНОСАМО!</h1>
+        </div>
+        <div class="b-menu">
+            <a class="b-menu__item" href="">Что это?</a>
+            <a class="b-menu__item" href="">Что было?</a>
+        </div>
+        <div class="b-vote"><a href="">Голосовать</a></div>
+        <div class="b-manager">Анна Татьянкина <a href="">anna@jetstyle.ru</a> (лицо суперответственное)</div>
+    </header>
+
+
+    <div class="b-players">
+        <h2 class="b-players__h2">Сейчас участвуют</h2>
+        <h3 class="b-players__nomination">Номинация "Бескомпромиссная отсебятина"</h3>
+        <ul>
+            <li class="b-playaers__item">Вася и <span class="b-players__item-project">супер-сайт</span></li>
+            <li class="b-playaers__item">Команда "С очень веселым названием" и <span class="b-players-__item-project">Великий проект</span></li>
+            <li class="b-playaers__item">Вова и <span class="b-players__item-project">сами-знаете-что</span></li>
+        </ul>
+        <h3 class="b-players__nomination">Номинация "Мучительный компромисс"</h3>
+        <ul>
+            <li class="b-playaers__item">Лена и <span class="b-players__item-project">все новое</span></li>
+            <li class="b-playaers__item">Света и <span class="b-players__item-project">Прекрасно-лучшее-вечное</span></li>
+            <li class="b-playaers__item">Команда "Бравые ребята" и <span class="b-players__item-project">Бравые ребята</span></li>
+        </ul>
+    </div>
+
+    <div class="b-news">
+        <article class="b-news-item">
+            <div class="b-news-item__date">12 ноября 2012</div>
+            <div class="b-news-item__text">Презентация конкурса в широкие массы</div>
+        </article>        
+        <article class="b-news-item">
+            <div class="b-news-item__date">9 ноября 2012</div>
+            <h4 class="b-news-item__h4">Письмо-письмо-читай письмо!</h4>
+            <div class="b-news-item__text">Презентация конкурса в широкие массы</div>
+        </article>
+    </div>
+</div>
+<footer>
+
+</footer>
+
+
+
+    <!-- If IE, use html5shiv to init html5 tags -->
+    <!--[if lt IE 9]><script src="lib/html5shiv.js"></script><![endif]-->
+
+    <!-- try to load jQuery from yandex CDN, and if fail use local one -->
+    <script src="http://yandex.st/jquery/1.8.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="lib/jquery.min.js"><\/script>')</script>
+
+    <!-- CHECKLIST: Rename to *.min.js for production -->
+    <script src="publish/script.js"></script>
+
+    <!-- CHECKLIST: Change {FIXME} to site's ID
+         Google Analytics snippet BEGIN -->
+    <script>
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount','{FIXME}'],['_trackPageview']);
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+    <!-- Google Analytics snippet END -->
+
+    <!-- CHECKLIST: Change {FIXME} to site's ID (3 places)
+         Yandex.Metrica snippet BEGIN -->
+    <script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter{FIXME} = new Ya.Metrika({id:{FIXME}, enableAll: true, webvisor:true});
+            } catch(e) {}
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <noscript><div><img src="//mc.yandex.ru/watch/{FIXME}" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- Yandex.Metrica snippet END -->
+
+</body>
+</html>
