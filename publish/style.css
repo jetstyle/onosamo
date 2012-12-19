@@ -121,7 +121,7 @@ button,
 input,
 select,
 textarea {
-  font-family: Arial, Helvetica, FreeSans, "Liberation Sans", "Nimbus Sans L", sans-serif;
+  font-family: Calibri, Arial, Helvetica, FreeSans, "Liberation Sans", "Nimbus Sans L", sans-serif;
   color: #000;
 }
 body {
@@ -272,30 +272,112 @@ q:after {
 }
 
 
+/* b-bunner.styl */
+
+.b-bunner {
+  height: 350px;
+  background-color: #2fb9d2;
+  color: #fff;
+  border-top: solid 1px #6ecee0;
+}
+.b-bunner__text {
+  width: 400px;
+}
+.b-bunner__h2 {
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 50px;
+  margin-top: 80px;
+}
+.b-bunner__text {
+  font-size: 18px;
+}
+
+
+/* b-footer.styl */
+
+.b-footer {
+  height: 100px;
+  background: #ededed;
+  border-top: solid 1px #dedddd;
+  color: #706f73;
+  font-size: 13px;
+  padding-top: 30px;
+}
+.b-footer__copy {
+  width: 220px;
+  margin-right: 20px;
+  float: left;
+}
+.b-footer-menu {
+  width: 700px;
+  margin-right: 20px;
+  float: left;
+}
+.b-footer-menu__item {
+  padding-right: 33px;
+}
+.b-footer-menu__item:link {
+  color: #706f73;
+}
+.b-footer-menu__item:visited {
+  color: #706f73;
+}
+.b-footer-menu__item:hover {
+  color: #706f73;
+  text-decoration: none;
+}
+
+
 /* b-header.styl */
 
 .b-header {
-  width: 940px;
+  height: 63px;
+  background: url("../blocks/b-header/bg.png");
+  color: #fff;
+  line-height: 60px;
+}
+.b-header__title {
+  width: 140px;
   margin-right: 20px;
   float: left;
+  font-size: 26px;
+  font-weight: bold;
+  height: 63px;
 }
 
 
-/* b-header.styl */
+/* b-login.styl */
 
-.b-news {
-  width: 620px;
+@import '../config';
+
+.b-login
+	columns( 3 )
+b-login__button
+    float: right
+
+/* b-menu.styl */
+
+.b-menu {
+  width: 540px;
   margin-right: 20px;
   float: left;
 }
-
-
-/* b-players.styl */
-
-.b-players {
-  width: 300px;
-  margin-right: 20px;
+.b-menu__item {
   float: left;
+  padding-right: 35px;
+  line-height: 60px;
+}
+.b-menu__item:link {
+  color: #fff;
+  text-decoration: none;
+}
+.b-menu__item:visited {
+  color: #fff;
+}
+.b-menu__item:hover {
+  color: #fff;
+  text-decoration: underline;
 }
 
 
@@ -304,7 +386,7 @@ q:after {
 .b-text p,
 .b-text-p {
   margin-bottom: 12px;
-  font-family: Arial, Helvetica, FreeSans, "Liberation Sans", "Nimbus Sans L", sans-serif;
+  font-family: Calibri, Arial, Helvetica, FreeSans, "Liberation Sans", "Nimbus Sans L", sans-serif;
   font-size: 16px;
   line-height: 24px;
 }
@@ -355,34 +437,34 @@ q:after {
 }
 .b-text h1,
 .b-text-h1 {
-  font: normal 48px/70px Arial, Helvetica, FreeSans, "Liberation Sans", "Nimbus Sans L", sans-serif;
+  font: normal 48px/70px Calibri, Arial, Helvetica, FreeSans, "Liberation Sans", "Nimbus Sans L", sans-serif;
   color: #000;
   border-bottom: 2px solid #000;
   margin-bottom: 24px;
 }
 .b-text h2,
 .b-text-h2 {
-  font: bold 36px/36px Arial, Helvetica, FreeSans, "Liberation Sans", "Nimbus Sans L", sans-serif;
+  font: bold 36px/36px Calibri, Arial, Helvetica, FreeSans, "Liberation Sans", "Nimbus Sans L", sans-serif;
   color: #000;
 }
 .b-text h3,
 .b-text-h3 {
-  font: normal 24px/24px Arial, Helvetica, FreeSans, "Liberation Sans", "Nimbus Sans L", sans-serif;
+  font: normal 24px/24px Calibri, Arial, Helvetica, FreeSans, "Liberation Sans", "Nimbus Sans L", sans-serif;
   color: #c00;
 }
 .b-text h4,
 .b-text-h4 {
-  font: bold 18px/24px Arial, Helvetica, FreeSans, "Liberation Sans", "Nimbus Sans L", sans-serif;
+  font: bold 18px/24px Calibri, Arial, Helvetica, FreeSans, "Liberation Sans", "Nimbus Sans L", sans-serif;
   color: #000;
 }
 .b-text h5,
 .b-text-h5 {
-  font: normal 16px/24px Arial, Helvetica, FreeSans, "Liberation Sans", "Nimbus Sans L", sans-serif;
+  font: normal 16px/24px Calibri, Arial, Helvetica, FreeSans, "Liberation Sans", "Nimbus Sans L", sans-serif;
   color: #000;
 }
 .b-text h6,
 .b-text-h6 {
-  font: normal 16px/24px Arial, Helvetica, FreeSans, "Liberation Sans", "Nimbus Sans L", sans-serif;
+  font: normal 16px/24px Calibri, Arial, Helvetica, FreeSans, "Liberation Sans", "Nimbus Sans L", sans-serif;
   color: #000;
 }
 .b-text ul,
