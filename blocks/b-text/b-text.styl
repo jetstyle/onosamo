@@ -6,7 +6,7 @@ $textBottomMargin     = ($verticalRythmBase/2);
 
 $textHeaderFontFamily = $baseFontFamily;
 $textHeaderFontWeight = normal;
-$textHeaderColor      = $baseTextColor;
+$textHeaderColor      = #494949;
 $textHeaderLinkColor  = inherit;
 $textHeaderLinkStyle  = none;
 
@@ -17,27 +17,27 @@ $textH1FontWeight = $textHeaderFontWeight;
 $textH1Color      = $textHeaderColor;
 
 $textH2FontFamily = $textHeaderFontFamily;
-$textH2FontSize   = 36px;
+$textH2FontSize   = 42px;
 $textH2LineHeight = $verticalRythmBase*1.5;
 $textH2FontWeight = bold;
 $textH2Color      = $textHeaderColor;
 
 $textH3FontFamily = $textHeaderFontFamily;
-$textH3FontSize   = 24px;
+$textH3FontSize   = 32px;
 $textH3LineHeight = $verticalRythmBase;
-$textH3FontWeight = $textHeaderFontWeight;
-$textH3Color      = #c00;
+$textH3FontWeight = bold;
+$textH3Color      = $textHeaderColor;
 
 $textH4FontFamily = $textHeaderFontFamily;
-$textH4FontSize   = 18px;
+$textH4FontSize   = 26px;
 $textH4LineHeight = $verticalRythmBase;
 $textH4FontWeight = bold;
 $textH4Color      = $textHeaderColor;
 
 $textH5FontFamily = $textHeaderFontFamily;
-$textH5FontSize   = 16px;
-$textH5LineHeight = $verticalRythmBase;
-$textH5FontWeight = $textHeaderFontWeight;
+$textH5FontSize   = 15px;
+$textH5LineHeight = 18px;
+$textH5FontWeight = bold;
 $textH5Color      = $textHeaderColor;
 
 $textH6FontFamily = $textHeaderFontFamily;
@@ -51,16 +51,25 @@ $textTableFontSize    = 13px;
 $textTableBorder      = 1px solid #ccc;
 $textTableHeaderBG    = #eee;
 
+/* links */
+.b-text a:link
+    color: #fe6915;
+.b-text a:hover,
+.b-text a:active
+    color: #fe6915;
+    text-decoration: none;
+
+
 /* text styles */
 
 .b-text {}
 
     & p,
     &-p
-        margin-bottom: $textBottomMargin;
+        margin-bottom: 0;
         font-family: $baseFontFamily;
         font-size: $baseFontSize;
-        line-height: $verticalRythmBase;
+        line-height: 1.1;
 
     // Headers
 
@@ -68,11 +77,15 @@ $textTableHeaderBG    = #eee;
     & h2, &-h2,
     & h3, &-h3,
     & h4, &-h4,
-    & h5, &-h5,
+    &-h5,
     & h6, &-h6
         text-rendering: optimizelegibility;
         margin-top: $verticalRythmBase;
         margin-bottom: $textBottomMargin;
+
+    & h5
+        margin-top: 4px;
+        margin-bottom: 4px;
 
     & h1 a, &-h1 a,
     & h2 a, &-h2 a,
@@ -132,18 +145,30 @@ $textTableHeaderBG    = #eee;
         margin-bottom: 0;
 
     & ul
-        list-style: none;
+        list-style-type: none;
 
     & ul > li:before
-         content: '\2014\a0';
+         content: url(ul_marker.png);
          float: left;
-         margin-left: -1.25em;
+         margin-left: -1em;
 
     & ol
-        list-style: decimal;
+        list-style-type: none;
+        counter-reset: list1;
 
+     & ol li:before
+        color: #fe6915;
+        content: counter(list1, decimal) ". ";
+        counter-increment: list1;
+        float: left;
+        margin-left: -1em;
+
+     & ol li 
+        color: fe6915;    
+           
     & li
-        line-height: $verticalRythmBase;
+        line-height: 1.2;
+        margin-bottom: 8px;
 
     // Description Lists
 

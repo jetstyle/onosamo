@@ -126,8 +126,8 @@ textarea {
   color: #000;
 }
 body {
-  font-size: 16px;
-  line-height: 1.5em;
+  font-size: 15px;
+  line-height: 1.6em;
   background: #fff;
 }
 ::-moz-selection {
@@ -221,7 +221,7 @@ hr {
   height: 1px;
   border: 0;
   border-top: 1px solid #ccc;
-  margin: 1.5em 0;
+  margin: 1.6em 0;
   padding: 0;
 }
 pre,
@@ -268,6 +268,7 @@ q:after {
   font-size: 12px;
   line-height: 10px;
   overflow: hidden;
+  margin-top: 25px;
 }
 .b-breadcrumbs__item {
   color: #454545;
@@ -275,6 +276,7 @@ q:after {
   padding: 0 6px 2px 0;
 }
 .b-breadcrumbs__item__link {
+  color: #2a2727;
   margin: 0 6px 0 0;
 }
 .b-breadcrumbs__item__link:link,
@@ -284,6 +286,7 @@ q:after {
 .b-breadcrumbs__item__link:link:hover,
 .b-breadcrumbs__item__link:link:active {
   text-decoration: none;
+  color: #2a2727;
 }
 
 
@@ -311,6 +314,21 @@ q:after {
 
 /* b-content.ie.styl */
 
+.b-content {
+  width: 700px;
+  margin-right: 20px;
+  float: left;
+}
+.b-content__h2 {
+  font-size: 42px;
+  line-height: 50px;
+  margin-top: 9px;
+  font-weight: bold;
+  color: #494949;
+}
+.b-text .b-content__h4_color_bright {
+  color: #fe6915;
+}
 
 
 /* b-footer.ie.styl */
@@ -383,6 +401,7 @@ q:after {
   line-height: 48px;
   font-weight: bold;
   margin: 15px 0 5px;
+  color: #494949;
 }
 .b-main__all-link {
   font-size: 18px;
@@ -437,6 +456,7 @@ q:after {
   width: 220px;
   margin-right: 20px;
   float: left;
+  height: 310px;
 }
 .b-project-item__img {
   height: 216px;
@@ -491,6 +511,8 @@ q:after {
   font-size: 18px;
   line-height: 20px;
   margin-top: 10px;
+  max-height: 63px;
+  overflow: hidden;
 }
 .b-project-item__h3-link {
   font-weight: bold;
@@ -514,12 +536,20 @@ q:after {
 
 /* b-text.ie.styl */
 
+.b-text a:link {
+  color: #fe6915;
+}
+.b-text a:hover,
+.b-text a:active {
+  color: #fe6915;
+  text-decoration: none;
+}
 .b-text p,
 .b-text-p {
-  margin-bottom: 12px;
+  margin-bottom: 0;
   font-family: Calibri, Arial, Helvetica, FreeSans, "Liberation Sans", "Nimbus Sans L", sans-serif;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 15px;
+  line-height: 1.1;
 }
 .b-text h1,
 .b-text-h1,
@@ -529,13 +559,16 @@ q:after {
 .b-text-h3,
 .b-text h4,
 .b-text-h4,
-.b-text h5,
 .b-text-h5,
 .b-text h6,
 .b-text-h6 {
   text-rendering: optimizelegibility;
   margin-top: 24px;
   margin-bottom: 12px;
+}
+.b-text h5 {
+  margin-top: 4px;
+  margin-bottom: 4px;
 }
 .b-text h1 a,
 .b-text-h1 a,
@@ -569,34 +602,34 @@ q:after {
 .b-text h1,
 .b-text-h1 {
   font: normal 48px/70px Calibri, Arial, Helvetica, FreeSans, "Liberation Sans", "Nimbus Sans L", sans-serif;
-  color: #000;
+  color: #494949;
   border-bottom: 2px solid #000;
   margin-bottom: 24px;
 }
 .b-text h2,
 .b-text-h2 {
-  font: bold 36px/36px Calibri, Arial, Helvetica, FreeSans, "Liberation Sans", "Nimbus Sans L", sans-serif;
-  color: #000;
+  font: bold 42px/36px Calibri, Arial, Helvetica, FreeSans, "Liberation Sans", "Nimbus Sans L", sans-serif;
+  color: #494949;
 }
 .b-text h3,
 .b-text-h3 {
-  font: normal 24px/24px Calibri, Arial, Helvetica, FreeSans, "Liberation Sans", "Nimbus Sans L", sans-serif;
-  color: #c00;
+  font: bold 32px/24px Calibri, Arial, Helvetica, FreeSans, "Liberation Sans", "Nimbus Sans L", sans-serif;
+  color: #494949;
 }
 .b-text h4,
 .b-text-h4 {
-  font: bold 18px/24px Calibri, Arial, Helvetica, FreeSans, "Liberation Sans", "Nimbus Sans L", sans-serif;
-  color: #000;
+  font: bold 26px/24px Calibri, Arial, Helvetica, FreeSans, "Liberation Sans", "Nimbus Sans L", sans-serif;
+  color: #494949;
 }
 .b-text h5,
 .b-text-h5 {
-  font: normal 16px/24px Calibri, Arial, Helvetica, FreeSans, "Liberation Sans", "Nimbus Sans L", sans-serif;
-  color: #000;
+  font: bold 15px/18px Calibri, Arial, Helvetica, FreeSans, "Liberation Sans", "Nimbus Sans L", sans-serif;
+  color: #494949;
 }
 .b-text h6,
 .b-text-h6 {
   font: normal 16px/24px Calibri, Arial, Helvetica, FreeSans, "Liberation Sans", "Nimbus Sans L", sans-serif;
-  color: #000;
+  color: #494949;
 }
 .b-text ul,
 .b-text ol {
@@ -610,18 +643,30 @@ q:after {
   margin-bottom: 0;
 }
 .b-text ul {
-  list-style: none;
+  list-style-type: none;
 }
 .b-text ul > li:before {
-  content: '\2014\a0';
+  content: url("../blocks/b-text/ul_marker.png");
   float: left;
-  margin-left: -1.25em;
+  margin-left: -1em;
 }
 .b-text ol {
-  list-style: decimal;
+  list-style-type: none;
+  counter-reset: list1;
+}
+.b-text ol li:before {
+  color: #fe6915;
+  content: counter(list1, decimal) ". ";
+  counter-increment: list1;
+  float: left;
+  margin-left: -1em;
+}
+.b-text ol li {
+  color: fe6915;
 }
 .b-text li {
-  line-height: 24px;
+  line-height: 1.2;
+  margin-bottom: 8px;
 }
 .b-text dl {
   margin-bottom: 12px;
@@ -686,6 +731,15 @@ q:after {
 .b-wrap {
   margin: 0 auto;
   width: 960px;
+  zoom: 1;
+}
+.b-wrap:before,
+.b-wrap:after {
+  content: "";
+  display: table;
+}
+.b-wrap:after {
+  clear: both;
 }
 
 
