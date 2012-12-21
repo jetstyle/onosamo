@@ -269,6 +269,7 @@ q:after {
   line-height: 10px;
   overflow: hidden;
   margin-top: 25px;
+  margin-bottom: 16px;
 }
 .b-breadcrumbs__item {
   color: #454545;
@@ -322,12 +323,50 @@ q:after {
 .b-content__h2 {
   font-size: 42px;
   line-height: 50px;
-  margin-top: 9px;
   font-weight: bold;
   color: #494949;
 }
 .b-text .b-content__h4_color_bright {
   color: #fe6915;
+}
+.b-content__project-nav {
+  margin: 15px 0;
+  border-bottom: solid 1px #fe6915;
+}
+.b-content__project-nav__item {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  padding: 8px 20px;
+}
+.b-content__project-nav__item_state_current {
+  background: #f99508;
+  background: -moz-linear-gradient(top, #f99508 0%, #fe6915 77%, #fe6915 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f99508), color-stop(77%, #fe6915), color-stop(100%, #fe6915));
+  background: -webkit-linear-gradient(top, #f99508 0%, #fe6915 77%, #fe6915 100%);
+  background: -o-linear-gradient(top, #f99508 0%, #fe6915 77%, #fe6915 100%);
+  background: -ms-linear-gradient(top, #f99508 0%, #fe6915 77%, #fe6915 100%);
+  background: linear-gradient(to bottom, #f99508 0%, #fe6915 77%, #fe6915 100%);
+}
+.b-content__project-nav__item_state_current .b-content__project-nav__item__link:link,
+.b-content__project-nav__item_state_current .b-content__project-nav__item__link:visited,
+.b-content__project-nav__item_state_current .b-content__project-nav__item__link:active {
+  color: #fff;
+}
+.b-content__project-nav__item_state_current .b-content__project-nav__item__link:hover {
+  text-decoration: none;
+}
+.b-content__project-nav__item__link:link,
+.b-content__project-nav__item__link:visited,
+.b-content__project-nav__item__link:active {
+  color: #464646;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+.b-content__project-nav__item__link:hover {
+  text-decoration: underline;
+  color: #464646;
 }
 
 
@@ -601,7 +640,7 @@ q:after {
 }
 .b-text h1,
 .b-text-h1 {
-  font: normal 48px/70px Calibri, Arial, Helvetica, FreeSans, "Liberation Sans", "Nimbus Sans L", sans-serif;
+  font: $bold 48px/70px Calibri, Arial, Helvetica, FreeSans, "Liberation Sans", "Nimbus Sans L", sans-serif;
   color: #494949;
   border-bottom: 2px solid #000;
   margin-bottom: 24px;
@@ -723,6 +762,69 @@ q:after {
   display: block;
   margin-bottom: 12px;
   line-height: 24px;
+}
+
+
+/* b-vote.ie.styl */
+
+.b-vote {
+  width: 220px;
+  margin-right: 20px;
+  float: left;
+  background: #f3f3f3;
+}
+.b-vote__h5 {
+  font-size: 15px;
+  font-weight: bold;
+  color: #979797;
+  margin: 15px 0 10px;
+}
+.b-vote-content {
+  margin: 20px 0 0 40px;
+}
+.b-vote-number__bg {
+  height: 106px;
+  width: 84px;
+  background: #fff;
+  border: solid 1px #e2dfdf;
+  margin: 0 4px 0 0;
+  float: left;
+  font-size: 100px;
+  color: #494949;
+  text-align: center;
+  line-height: 100px;
+}
+.b-vote__button {
+  margin: 20px 0;
+}
+.b-vote__hr {
+  border-bottom: solid 1px #b5b5b5;
+}
+.b-vote-user {
+  margin-bottom: 20px;
+  color: #1f1f1f;
+}
+.b-vote-user__user {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  vertical-align: top;
+  max-height: 48px;
+  overflow: hidden;
+}
+.b-vote-user__img {
+  margin-right: 15px;
+}
+.b-vote-user__name,
+.b-vote-user__surname {
+  color: #1f1f1f;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 15px;
+}
+.b-vote-user__position {
+  font-size: 13px;
+  line-height: 13px;
 }
 
 

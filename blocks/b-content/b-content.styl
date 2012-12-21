@@ -6,8 +6,40 @@
 .b-content__h2    
     font-size: 42px
     line-height: 50px
-    margin-top: 9px
     font-weight: bold
     color: #494949
 .b-text .b-content__h4_color_bright
     color: #fe6915
+
+.b-content__project-nav
+    margin: 15px 0
+    border-bottom: solid 1px #fe6915
+.b-content__project-nav__item
+    display: inline-block
+    padding: 8px 20px
+.b-content__project-nav__item_state_current
+    border-radius: top 3px
+    background: #f99508
+    background: -moz-linear-gradient(top,  #f99508 0%, #fe6915 77%, #fe6915 100%)
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f99508), color-stop(77%,#fe6915), color-stop(100%,#fe6915))
+    background: -webkit-linear-gradient(top,  #f99508 0%,#fe6915 77%,#fe6915 100%)
+    background: -o-linear-gradient(top,  #f99508 0%,#fe6915 77%,#fe6915 100%)
+    background: -ms-linear-gradient(top,  #f99508 0%,#fe6915 77%,#fe6915 100%)
+    background: linear-gradient(to bottom,  #f99508 0%,#fe6915 77%,#fe6915 100%)
+.b-content__project-nav__item_state_current .b-content__project-nav__item__link:link,
+.b-content__project-nav__item_state_current .b-content__project-nav__item__link:visited,
+.b-content__project-nav__item_state_current .b-content__project-nav__item__link:active
+    color: #fff    
+.b-content__project-nav__item_state_current .b-content__project-nav__item__link:hover
+    text-decoration: none
+.b-content__project-nav__item__link:link,
+.b-content__project-nav__item__link:visited,
+.b-content__project-nav__item__link:active
+    color: #464646
+    text-decoration: none
+    font-size: 18px
+    font-weight: bold
+.b-content__project-nav__item__link:hover    
+    text-decoration: underline
+    color: #464646
+
