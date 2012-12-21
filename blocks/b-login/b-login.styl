@@ -1,4 +1,33 @@
 @import '../config';
 
 .b-login
-	columns( 3 )
+    columns( 3 )
+    &-user
+        display: inline-block
+
+    &-user__img
+        margin-right: 10px
+
+    &-user__name
+        display: inline-block
+        font-size: 13px
+
+    &__logout
+        float: right
+        font-size: 13px
+
+    &__logout-link
+        display: inline-block
+        line-height: 13px
+
+    &__logout-link:link
+    &__logout-link:visited
+    &__logout-link:active
+    &__logout-link:hover
+        color: #fff
+        border-bottom: 1px dashed #fff
+        text-decoration: none
+
+    &__logout-link:hover
+        border-bottom: none
+

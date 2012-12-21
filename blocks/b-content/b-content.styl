@@ -1,3 +1,5 @@
+vendor = webkit
+
 @import '../config';
 
 .b-content
@@ -5,9 +7,17 @@
 
 .b-content__h2    
     font-size: 42px
-    line-height: 50px
+    line-height: 42px
     font-weight: bold
     color: #494949
+    margin-bottom: 10px
+.b-content__nominacia
+    font-size: 12px
+    display: inline-block
+    padding: 0 10px    
+    background: #e8e8e9
+    border-radius: 3px
+    margin-top: -10px
 .b-text .b-content__h4_color_bright
     color: #fe6915
 
@@ -26,14 +36,16 @@
     background: -o-linear-gradient(top,  #f99508 0%,#fe6915 77%,#fe6915 100%)
     background: -ms-linear-gradient(top,  #f99508 0%,#fe6915 77%,#fe6915 100%)
     background: linear-gradient(to bottom,  #f99508 0%,#fe6915 77%,#fe6915 100%)
-.b-content__project-nav__item_state_current .b-content__project-nav__item__link:link,
-.b-content__project-nav__item_state_current .b-content__project-nav__item__link:visited,
+filter: unquote('progid:DXImageTransform.Microsoft.gradient( startColorstr='#f99508', endColorstr='#fe6915',GradientType=0 )')
+
+.b-content__project-nav__item_state_current .b-content__project-nav__item__link:link
+.b-content__project-nav__item_state_current .b-content__project-nav__item__link:visited
 .b-content__project-nav__item_state_current .b-content__project-nav__item__link:active
     color: #fff    
 .b-content__project-nav__item_state_current .b-content__project-nav__item__link:hover
     text-decoration: none
-.b-content__project-nav__item__link:link,
-.b-content__project-nav__item__link:visited,
+.b-content__project-nav__item__link:link
+.b-content__project-nav__item__link:visited
 .b-content__project-nav__item__link:active
     color: #464646
     text-decoration: none
