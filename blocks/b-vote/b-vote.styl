@@ -1,8 +1,15 @@
+vendor = true
+
 @import '../config';
 
 .b-vote
-    columns ( 3 )
+    float: left
+    width: 220px
+    padding-right: 90px
+    margin-right: -70px
     background: #f3f3f3
+    margin-bottom: -2000px
+    padding-bottom: 2000px
 .b-vote__h5
     font-size: 15px    
     font-weight: bold
@@ -22,7 +29,60 @@
     text-align: center
     line-height: 100px
 .b-vote__button
-    margin: 20px 0
+    position: relative
+.b-vote__button-link
+    display: inline-block
+    margin 20px 0
+    /*display: none Скрывает кнопку Голосовать!*/
+.b-vote__button-link:link,
+.b-vote__button-link:active,
+.b-vote__button-link:hover,
+.b-vote__button-link:visited
+    padding-right: 14px
+    color: #fff
+    text-decoration: none
+    font-size: 24px
+    font-weight: bold
+    text-align: center
+    line-height: 53px
+    text-shadow: 1px 1px 1px #878787
+    width: 160px
+    height: 53px
+    display: inline-block
+    border-radius: 5px
+    border: solid 1px #3c7900
+    
+    background: #abc901;
+    background: -moz-linear-gradient(top,  #abc901 0%, #abc901 0%, #84b402 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#abc901), color-stop(0%,#abc901), color-stop(100%,#84b402));
+    background: -webkit-linear-gradient(top,  #abc901 0%,#abc901 0%,#84b402 100%);
+    background: -o-linear-gradient(top,  #abc901 0%,#abc901 0%,#84b402 100%);
+    background: -ms-linear-gradient(top,  #abc901 0%,#abc901 0%,#84b402 100%);
+    background: linear-gradient(to bottom,  #abc901 0%,#abc901 0%,#84b402 100%);
+    filter: ('progid:DXImageTransform.Microsoft.gradient( startColorstr='#abc901', endColorstr='#84b402',GradientType=0 );')
+
+.b-vote__button-img
+    background: url(vote_likehand.png) no-repeat 125px 3px
+    padding: 0  36px 0 20px
+    -moz-box-shadow: 0 0 10px rgba(0,0,0,0);
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0,0);
+    box-shadow: 0 0 10px rgba(0,0,0,0);
+.b-vote__button-done
+    color: #000
+    font-size: 12px
+    line-height: 18px
+    padding-top: 10px
+    text-align: center
+    width: 174px
+    height: 44px
+    display: inline-block
+    border-radius: 5px
+    background: #d5f6c1
+    position: absolute
+    top: 127px
+    left: 0
+    border: solid 2px #d5f6c1
+    display: none  /*чтобы скрыть "Спасибо за ваш голос!..."*/
 .b-vote__hr
     border-bottom: solid 1px #b5b5b5
 .b-vote-user

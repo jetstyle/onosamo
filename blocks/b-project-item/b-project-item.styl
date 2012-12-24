@@ -13,6 +13,8 @@
     text-align: center
     position: relative
     cursor: pointer
+    margin-bottom: 10px
+    text-decoration: none
 .b-project-item__hover
     background: url(bg_opas_90.png) repeat 0 0 transparent
     padding: 20px 25px
@@ -25,19 +27,28 @@
     right: 0
     text-align: left
     top: 0
+    text-decoration: none
     display: none
-.b-project-item__img:hover .b-project-item__hover
-    display: block
-.b-project-item__autors    
+.b-project-item__img:hover .b-project-item__hover,
+.b-project-item__link-block:hover .b-project-item__hover
+    display: block    
+    text-decoration: none
+.b-project-item__autors
     color: #fff
+    font-weight: normal
+    text-decoration: none
 .b-project-item__autors-h7
     font-weight: bold
     margin-bottom: 5px
-.b-project-item__info    
+    text-decoration: none
+.b-project-item__info
+    text-decoration: none
     position: absolute
     bottom: 25px
+    font-weight: normal
 
 .b-project-item__like
+    text-decoration: none
     color: #90d301
     padding-left: 21px
     padding-top: 1px
@@ -52,20 +63,22 @@
  .b-project-item__h3
     font-size: 18px
     line-height: 20px
-    margin-top: 10px
-    max-height: 63px
+    max-height: 60px
     overflow: hidden
-.b-project-item__h3-link    
+.b-project-item__link
+    display: block
     font-weight: bold
-.b-project-item__h3-link:link
-    color: #464646    
-    text-decoration: none
-.b-project-item__h3-link:visited
+.b-project-item__link:link
     color: #464646
-.b-project-item__h3-link:hover
+    text-decoration: none
+.b-project-item__link:visited
+    color: #464646
+    text-decoration: none
+.b-project-item__link:hover .b-project-item__h3
     color: #464646
     text-decoration: underline
-
+.b-project-item__link:hover
+    text-decoration: none
 .b-project-item__nomin
     font-size: 12px
     color: #262627
