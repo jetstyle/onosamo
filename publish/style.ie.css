@@ -988,20 +988,16 @@ q:after {
 .b-vote__button-link:active,
 .b-vote__button-link:hover,
 .b-vote__button-link:visited {
-  padding-right: 14px;
   color: #fff;
   text-decoration: none;
   font-size: 24px;
   font-weight: bold;
   text-align: center;
-  line-height: 53px;
-  height: 53px;
-  width: 160px;
+  width: 174px;
   display: inline-block;
   *display: inline;
   zoom: 1;
   border: solid 1px #3c7900;
-/**/
   background: #abc901;
   background: -moz-linear-gradient(top, #abc901 0%, #abc901 0%, #84b402 100%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #abc901), color-stop(0%, #abc901), color-stop(100%, #84b402));
@@ -1025,10 +1021,13 @@ q:after {
   filter: 'progid:DXImageTransform.Microsoft.gradient( startColorstr=' #b5ce00 ', endColorstr=' #6e9400 ',GradientType=0 );';
 }
 .b-vote__button-img {
-  background: url("../blocks/b-vote/vote_likehand.png") no-repeat 125px 3px;
-  padding: 0 36px 0 20px;
+  background: url("../blocks/b-vote/vote_likehand.png") no-repeat center right;
+  padding: 10px 36px 10px 0px;
   -moz-box-shadow: 0 0 10px rgba(0,0,0,0);
   -webkit-box-shadow: 0 0 10px rgba(0,0,0,0);
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
 }
 .b-vote__button-done {
   color: #000;
