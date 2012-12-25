@@ -462,10 +462,6 @@ q:after {
   margin-right: 20px;
   float: left;
 }
-.b-footer-copy__logo {
-  display: block;
-  margin-top: 5px;
-}
 .b-footer-menu {
   width: 700px;
   margin-right: 20px;
@@ -1095,12 +1091,27 @@ q:after {
 .b-wrap {
   margin: 0 auto;
   width: 960px;
-  overflow: hidden;
+}
+.b-wrap:before,
+.b-wrap:after {
+  content: "";
+  display: table;
+}
+.b-wrap:after {
+  clear: both;
 }
 .b-1100 {
   margin: 0 auto;
   width: 1100px;
   position: relative;
+}
+.b-1100:before,
+.b-1100:after {
+  content: "";
+  display: table;
+}
+.b-1100:after {
+  clear: both;
 }
 .b-wrap_good_bunner {
   position: relative;
