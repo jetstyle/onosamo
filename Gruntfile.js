@@ -149,6 +149,6 @@ module.exports = function( grunt ) {
 
     grunt.registerTask('default', 'concat styletto:dev styletto:dev_ie');
     grunt.registerTask('reloader', 'concat styletto:dev styletto:dev_ie server');
-    grunt.registerTask('publish', 'concat lint min  styletto:dev styletto:dev_ie csslint styletto:publish styletto:publish_ie');
+    grunt.registerTask('publish', 'concat min  styletto:dev styletto:dev_ie styletto:publish styletto:publish_ie');
 
 };

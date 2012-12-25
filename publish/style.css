@@ -315,18 +315,20 @@ q:after {
 .b-bunner__h2 {
   font-weight: bold;
   font-size: 50px;
-  line-height: 50px;
-  margin-top: 80px;
+  line-height: 60px;
+  margin-top: 75px;
 }
 .b-bunner__text {
+  margin-top: -8px;
   font-size: 18px;
+  line-height: 20px;
 }
 .b-bunner__cup {
   background: url("../blocks/b-bunner/cup.png");
   width: 842px;
   height: 393px;
   position: absolute;
-  top: 63px;
+  top: 0;
   left: 258px;
 }
 .b-bunner__button:link,
@@ -338,13 +340,13 @@ q:after {
   font-size: 18px;
   font-weight: bold;
   text-align: center;
-  line-height: 36px;
+  line-height: 40px;
   text-shadow: 0px 1px 1px #636363;
   cursor: pointer;
   display: inline-block;
-  margin-top: 20px;
+  margin-top: 27px;
   width: 240px;
-  height: 40px;
+  height: 42px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
   border: solid 1px #ea3c00;
@@ -1093,21 +1095,21 @@ q:after {
 .b-wrap {
   margin: 0 auto;
   width: 960px;
-  height: 100%;
-}
-.b-wrap:before,
-.b-wrap:after {
-  content: "";
-  display: table;
-}
-.b-wrap:after {
-  clear: both;
+  overflow: hidden;
 }
 .b-1100 {
   margin: 0 auto;
   width: 1100px;
   position: relative;
-  overflow: hidden;
+}
+.b-wrap_good_bunner {
+  position: relative;
+  margin: 0 auto;
+  width: 1100px;
+}
+.b-wrap_good_button {
+  position: relative;
+  height: 393px;
 }
 
 
