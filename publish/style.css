@@ -1103,6 +1103,7 @@ q:after {
 .b-1100 {
   margin: 0 auto;
   width: 1100px;
+  overflow: hidden;
   position: relative;
 }
 .b-1100:before,
