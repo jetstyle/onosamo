@@ -332,11 +332,12 @@ q:after {
   text-align: center;
   line-height: 40px;
   cursor: pointer;
+  padding-left: 18px;
+  padding-right: 18px;
   display: inline-block;
   *display: inline;
   zoom: 1;
   margin-top: 27px;
-  width: 240px;
   height: 42px;
   border: solid 1px #ea3c00;
   background: #fc7f01;
@@ -661,7 +662,8 @@ q:after {
   width: 220px;
   margin-right: 20px;
   float: left;
-  height: 310px;
+  height: 327px;
+  overflow: hidden;
 }
 .b-project-item__img {
   height: 216px;
@@ -751,6 +753,8 @@ q:after {
 .b-project-item__nomin {
   font-size: 12px;
   color: #262627;
+  line-height: 18px;
+  padding-top: 5px;
 }
 
 
@@ -1046,6 +1050,8 @@ q:after {
   position: absolute;
   top: 127px;
   left: 0;
+  border: solid 2px #d5f6c1;
+/*display: none чтобы скрыть "Спасибо за ваш голос!..."*/
 }
 .b-vote__button-done-text {
   display: table-cell;
