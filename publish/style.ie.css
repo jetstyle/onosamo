@@ -629,6 +629,7 @@ q:after {
   padding: 3px 15px;
   background: #1e1f27;
   margin-left: -15px;
+  margin-right: 20px;
 }
 .b-menu__item:link {
   color: #fff;
@@ -646,6 +647,9 @@ q:after {
 .b-menu__item_dark:visited,
 .b-menu__item_dark:active {
   color: #959595;
+}
+.b-menu__item_dark:hover {
+  text-decoration: none;
 }
 
 
@@ -982,7 +986,8 @@ q:after {
   *display: inline;
   zoom: 1;
   margin: 20px 0;
-/*display: none Скрывает кнопку Голосовать!*/
+  display: none;
+/*Скрывает кнопку Голосовать!*/
 }
 .b-vote__button-link:link,
 .b-vote__button-link:active,
@@ -1022,7 +1027,7 @@ q:after {
 }
 .b-vote__button-img {
   background: url("../blocks/b-vote/vote_likehand.png") no-repeat center right;
-  padding: 10px 36px 10px 0px;
+  padding: 15px 36px 15px 0px;
   -moz-box-shadow: 0 0 10px rgba(0,0,0,0);
   -webkit-box-shadow: 0 0 10px rgba(0,0,0,0);
   display: inline-block;
@@ -1033,20 +1038,20 @@ q:after {
   color: #000;
   font-size: 12px;
   line-height: 18px;
-  padding-top: 10px;
   text-align: center;
   width: 174px;
-  height: 44px;
-  display: inline-block;
-  *display: inline;
-  zoom: 1;
+  height: 54px;
+  display: table;
   background: #d5f6c1;
   position: absolute;
   top: 127px;
   left: 0;
-  border: solid 2px #d5f6c1;
-  display: none;
-/*чтобы скрыть "Спасибо за ваш голос!..."*/
+}
+.b-vote__button-done-text {
+  display: table-cell;
+  vertical-align: middle;
+  height: 54px;
+  width: 174px;
 }
 .b-vote__hr {
   border-bottom: solid 1px #b5b5b5;

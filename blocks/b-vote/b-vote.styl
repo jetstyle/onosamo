@@ -33,7 +33,7 @@ vendor = true
 .b-vote__button-link
     display: inline-block
     margin 20px 0
-    /*display: none Скрывает кнопку Голосовать!*/
+    display: none /*Скрывает кнопку Голосовать!*/
 .b-vote__button-link:link,
 .b-vote__button-link:active,
 .b-vote__button-link:hover,
@@ -74,7 +74,7 @@ vendor = true
     filter: ('progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5ce00', endColorstr='#6e9400',GradientType=0 );') if ie
 .b-vote__button-img
     background: url(vote_likehand.png) no-repeat center right
-    padding: 10px 36px 10px 0px
+    padding: 15px 36px 15px 0px
     -moz-box-shadow: 0 0 10px rgba(0,0,0,0);
     -webkit-box-shadow: 0 0 10px rgba(0,0,0,0);
     display: inline-block
@@ -82,18 +82,22 @@ vendor = true
     color: #000
     font-size: 12px
     line-height: 18px
-    padding-top: 10px
     text-align: center
     width: 174px
-    height: 44px
-    display: inline-block
+    height: 54px
+    display: table
     border-radius: 5px
     background: #d5f6c1
     position: absolute
     top: 127px
     left: 0
     border: solid 2px #d5f6c1
-    display: none  /*чтобы скрыть "Спасибо за ваш голос!..."*/
+     /*display: none чтобы скрыть "Спасибо за ваш голос!..."*/
+.b-vote__button-done-text
+    display: table-cell
+    vertical-align: middle
+    height: 54px
+    width: 174px
 .b-vote__hr
     border-bottom: solid 1px #b5b5b5
 .b-vote-user
