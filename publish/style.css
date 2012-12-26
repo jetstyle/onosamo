@@ -288,7 +288,7 @@ q:after {
 }
 .b-breadcrumbs__item__link {
   color: #2a2727;
-  margin: 0 6px 0 0;
+  margin: 0 3px 0 0;
 }
 .b-breadcrumbs__item__link:link,
 .b-breadcrumbs__item__link:visited {
