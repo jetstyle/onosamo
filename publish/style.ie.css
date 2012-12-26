@@ -1065,17 +1065,30 @@ q:after {
 .b-vote-user {
   margin-bottom: 20px;
   color: #1f1f1f;
+  height: 48px;
+  zoom: 1;
+}
+.b-vote-user:before,
+.b-vote-user:after {
+  content: "";
+  display: table;
+}
+.b-vote-user:after {
+  clear: both;
 }
 .b-vote-user__user {
   display: inline-block;
   *display: inline;
   zoom: 1;
+  float: left;
+  width: 117px;
   vertical-align: top;
   max-height: 48px;
   overflow: hidden;
 }
 .b-vote-user__img {
   margin-right: 15px;
+  float: left;
 }
 .b-vote-user__name,
 .b-vote-user__surname {
@@ -1087,6 +1100,8 @@ q:after {
 .b-vote-user__position {
   font-size: 13px;
   line-height: 13px;
+  height: 13px;
+  overflow: hidden;
 }
 
 
