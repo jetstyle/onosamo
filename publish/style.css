@@ -452,7 +452,7 @@ q:after {
 
 .b-footer {
   height: 100px;
-  background: #ededed;
+  background: #ededed repeat;
   border-top: solid 1px #dedddd;
   color: #706f73;
   font-size: 13px;
@@ -486,8 +486,8 @@ q:after {
 /* b-header.styl */
 
 .b-header {
+  background: url("../blocks/b-header/bg.png") scroll repeat #252630;
   height: 63px;
-  background: url("../blocks/b-header/bg.png");
   color: #fff;
   line-height: 60px;
 }
