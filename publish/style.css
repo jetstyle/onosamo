@@ -486,7 +486,7 @@ q:after {
 /* b-header.styl */
 
 .b-header {
-  background: url("../blocks/b-header/bg.png") scroll repeat #252630;
+  background: #252630 url("../blocks/b-header/bg.png");
   height: 63px;
   color: #fff;
   line-height: 60px;
