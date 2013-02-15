@@ -278,7 +278,7 @@ q:after {
 }
 .b-breadcrumbs__item__link {
   color: #2a2727;
-  margin: 0 30px 0 0;
+  margin: 0 3px 0 0;
 }
 .b-breadcrumbs__item__link:link,
 .b-breadcrumbs__item__link:visited {
@@ -638,6 +638,7 @@ q:after {
 }
 .b-menu__item:visited {
   color: #fff;
+  text-decoration: none;
 }
 .b-menu__item:hover {
   color: #fff;
@@ -648,6 +649,7 @@ q:after {
 .b-menu__item_dark:visited,
 .b-menu__item_dark:active {
   color: #959595;
+  text-decoration: none;
 }
 .b-menu__item_dark:hover {
   text-decoration: none;
