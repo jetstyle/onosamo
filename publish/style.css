@@ -324,12 +324,12 @@ q:after {
   line-height: 20px;
 }
 .b-bunner__cup {
-  background: url("../blocks/b-bunner/cup.png");
-  width: 842px;
+  background: url("../blocks/b-bunner/cup.png") no-repeat;
   height: 393px;
   position: absolute;
   top: 0;
   left: 258px;
+  right: 0;
 }
 .b-bunner__button:link,
 .b-bunner__button:hover,
