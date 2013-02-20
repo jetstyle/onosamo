@@ -1148,7 +1148,8 @@ q:after {
 .b-wrap_good_bunner {
   position: relative;
   margin: 0 auto;
-  width: 1100px;
+  min-width: 960px;
+  max-width: 1100px;
 }
 .b-wrap_good_button {
   position: relative;
